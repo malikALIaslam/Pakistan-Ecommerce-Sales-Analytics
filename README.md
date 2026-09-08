@@ -1,244 +1,47 @@
-# 🇵🇰 Pakistan E-Commerce Sales Analytics | SQL & Power BI
+# 📊 Pakistan E-Commerce Sales Dashboard | Power BI
 
 ## 📌 Project Overview
 
-This project is an end-to-end data analytics project focused on analyzing Pakistan's e-commerce sales data using **MySQL and Power BI**.
+This project is an interactive business intelligence dashboard built using Power BI to analyze Pakistan's e-commerce sales performance.
 
-The project covers the complete analytics workflow, including data exploration, data quality checks, sales analysis, customer analysis, product analysis, advanced SQL queries, data modeling, DAX calculations, and interactive Power BI dashboards.
+The project focuses on transforming raw e-commerce transaction data into interactive visual reports using Power Query, data modeling, relationships, Date Tables, DAX measures, KPI cards, slicers, and business visualizations.
 
-The main goal of this project is to transform raw e-commerce sales data into meaningful business insights and interactive dashboards that support data-driven decision-making.
+The dashboard provides insights into sales performance, product and category trends, customer behavior, payment methods, discounts, and order status.
 
 ---
 
 ## 🎯 Project Objectives
 
-The main objectives of this project are:
-
-* Analyze overall e-commerce sales performance
-* Calculate key business KPIs
-* Identify revenue trends over time
+* Build an interactive Power BI dashboard
+* Transform and prepare raw data using Power Query
+* Create a proper data model
+* Build relationships between tables
+* Create a Date Table for time analysis
+* Develop DAX measures for KPIs
+* Analyze sales and revenue performance
 * Analyze product and category performance
-* Identify top-performing products
-* Analyze customer purchasing behavior
+* Analyze customer behavior
 * Identify repeat and one-time customers
-* Analyze payment methods and order status
-* Measure discount impact on revenue
-* Perform advanced SQL analysis using CTEs and Window Functions
-* Build interactive Power BI dashboards
-* Create DAX measures for business analysis
+* Provide interactive business insights
 
 ---
 
 # 🛠️ Tools & Technologies
 
-| Tool        | Purpose                                      |
-| ----------- | -------------------------------------------- |
-| MySQL       | Data Storage and SQL Analysis                |
-| SQL         | Data Exploration and Business Analysis       |
-| Power BI    | Data Visualization and Dashboard Development |
-| Power Query | Data Cleaning and Transformation             |
-| DAX         | KPI and Advanced Calculations                |
-| GitHub      | Project Documentation and Version Control    |
+* Power BI
+* Power Query
+* DAX
+* MySQL
+* SQL
+* Data Modeling
 
 ---
 
-# 📊 Dataset Information
+# 🔄 Project Workflow
 
-The dataset contains Pakistan e-commerce sales transaction data.
-
-Key columns include:
-
-* Item ID
-* Order ID
-* Customer ID
-* Order Status
-* Order Date
-* SKU
-* Category
-* Price
-* Quantity
-* Revenue
-* Discount
-* Payment Method
-* Year
-* Month
-* Customer Since
-
-The dataset was used to perform sales, customer, product, category, payment, discount, and business performance analysis.
-
----
-
-# 🔍 SQL Analysis
-
-The SQL analysis was performed using MySQL.
-
-## 1. Data Exploration
-
-The following analysis was performed:
-
-* Total rows
-* Unique items
-* Unique orders
-* Unique customers
-* Unique SKUs
-* Unique categories
-* Payment methods
-* Order status distribution
-* Date range analysis
-
----
-
-## 2. Data Quality Checks
-
-The dataset was analyzed for:
-
-* Null values
-* Blank values
-* Duplicate records
-* Negative prices
-* Invalid quantities
-* Negative revenue
-* Negative discounts
-* Date inconsistencies
-
----
-
-## 3. Sales Performance Analysis
-
-Key sales KPIs calculated:
-
-* Total Revenue
-* Total Orders
-* Total Units Sold
-* Average Order Value
-* Average Price
-* Total Discount
-* Average Discount
-
----
-
-## 4. Time-Based Analysis
-
-Sales performance was analyzed by:
-
-* Year
-* Month
-* Monthly Revenue
-* Monthly Orders
-* Monthly Units Sold
-* Monthly Average Order Value
-
-Advanced time analysis included:
-
-* Previous Month Revenue
-* Month-over-Month Growth
-* Running Revenue
-* Revenue Contribution Percentage
-* Highest Revenue Month
-* Lowest Revenue Month
-
----
-
-## 5. Product Analysis
-
-Product performance analysis included:
-
-* Top Products by Revenue
-* Top Products by Units Sold
-* SKU Revenue Analysis
-* SKU Ranking
-* Top Products within Each Category
-* Product Revenue Contribution
-* Products Performing Above Average Revenue
-
----
-
-## 6. Category Analysis
-
-Category analysis included:
-
-* Revenue by Category
-* Units Sold by Category
-* Category Revenue Contribution
-* Category Ranking
-* Top Categories
-* Cumulative Category Revenue
-
----
-
-## 7. Customer Analysis
-
-Customer behavior analysis included:
-
-* Total Customers
-* Customer Lifetime Value
-* Customer Spending Analysis
-* Top Customers by Revenue
-* Average Customer Spending
-* Repeat Customers
-* One-Time Customers
-* Customer Segmentation
-
-Customers were segmented into:
-
-* High Value Customers
-* Medium Value Customers
-* Low Value Customers
-
----
-
-## 8. Payment & Order Analysis
-
-Business analysis included:
-
-* Orders by Payment Method
-* Revenue by Payment Method
-* Average Order Value by Payment Method
-* Orders by Status
-* Revenue by Order Status
-
----
-
-## 9. Discount Analysis
-
-Discount analysis included:
-
-* Discount Applied vs No Discount
-* Orders with Discounts
-* Revenue Generated with Discounts
-* Total Discount Amount
-
----
-
-# ⚡ Advanced SQL Techniques Used
-
-This project demonstrates the use of advanced SQL concepts including:
-
-* Common Table Expressions (CTEs)
-* Subqueries
-* Window Functions
-* LAG()
-* RANK()
-* DENSE_RANK()
-* PARTITION BY
-* Running Totals
-* CASE Statements
-* Aggregate Functions
-* DISTINCTCOUNT Logic
-* NULLIF()
-* Data Validation Queries
-
----
-
-# 📊 Power BI Dashboard
-
-The Power BI dashboard was built by connecting MySQL data to Power BI.
-
-The complete workflow:
-
-MySQL Database
+Raw Data
 ↓
-Power BI Connection
+Data Cleaning
 ↓
 Power Query Transformation
 ↓
@@ -250,15 +53,64 @@ Relationships
 ↓
 DAX Measures
 ↓
+KPIs
+↓
 Interactive Dashboards
 
 ---
 
-# 📈 Dashboard Pages
+# 🧹 Data Preparation
+
+Data preparation included:
+
+* Data type validation
+* Column cleaning
+* Handling missing values
+* Removing unnecessary data
+* Creating calculated columns
+* Preparing data for analysis
+
+---
+
+# 📐 Data Modeling
+
+A Date Table was created to support time intelligence and date-based analysis.
+
+Relationship:
+
+Date Table (1) → Sales (*)
+
+The model supports:
+
+* Year Analysis
+* Month Analysis
+* Time Intelligence
+* Trend Analysis
+
+---
+
+# 🧮 Key KPIs
+
+The dashboard includes:
+
+* Total Revenue
+* Total Orders
+* Total Customers
+* Total Units Sold
+* Average Order Value
+* Total Discount
+* Total Products
+* Average Price
+* Repeat Customers
+* One-Time Customers
+
+---
+
+# 📊 Dashboard Pages
 
 ## 1. Executive Overview
 
-This dashboard provides a high-level view of overall business performance.
+Provides a high-level overview of overall business performance.
 
 ### KPIs
 
@@ -276,18 +128,11 @@ This dashboard provides a high-level view of overall business performance.
 * Revenue by Payment Method
 * Revenue by Order Status
 
-### Filters
-
-* Year
-* Month
-* Category
-* Payment Method
-
 ---
 
 ## 2. Product & Category Analysis
 
-This dashboard focuses on product and category performance.
+Focuses on product and category performance.
 
 ### KPIs
 
@@ -302,19 +147,13 @@ This dashboard focuses on product and category performance.
 * Revenue by Category
 * Units Sold by Category
 * Category Revenue Contribution
-* Category Performance Table
-
-### Filters
-
-* Year
-* Category
-* Payment Method
+* Category Performance
 
 ---
 
 ## 3. Customer & Business Analysis
 
-This dashboard focuses on customer behavior and business performance.
+Focuses on customer purchasing behavior and business performance.
 
 ### KPIs
 
@@ -331,142 +170,65 @@ This dashboard focuses on customer behavior and business performance.
 * Discount Impact on Revenue
 * Orders by Status
 
-### Filters
+---
 
-* Year
-* Customer Segment
-* Payment Method
+# 📈 DAX Measures
+
+Key DAX measures created include:
+
+* Total Revenue
+* Total Orders
+* Total Customers
+* Total Units Sold
+* Average Order Value
+* Total Discount
+* Previous Month Revenue
+* Month-over-Month Growth
+* Running Revenue
+* Repeat Customers
+* One-Time Customers
 
 ---
 
-# 📐 Data Modeling
+# 🎛️ Interactive Features
 
-A Date Table was created to support time intelligence analysis.
+The dashboard includes:
 
-Relationship:
-
-Date Table (1) → Sales (*)
-
-The Date Table includes:
-
-* Date
-* Year
-* Month Number
-* Month Name
-* Quarter
-
-The Month Name column was sorted using Month Number.
+* Slicers
+* Filters
+* Interactive Charts
+* KPI Cards
+* Cross Filtering
+* Date-Based Analysis
 
 ---
 
-# 🧮 Key DAX Measures
+# 💡 Business Insights
 
-Some important DAX measures created:
+The dashboard helps answer questions such as:
 
-### Total Revenue
-
-```DAX
-Total Revenue =
-SUM(Sales[Revenue])
-```
-
-### Total Orders
-
-```DAX
-Total Orders =
-DISTINCTCOUNT(Sales[Order ID])
-```
-
-### Total Customers
-
-```DAX
-Total Customers =
-DISTINCTCOUNT(Sales[Customer ID])
-```
-
-### Total Units Sold
-
-```DAX
-Total Units Sold =
-SUM(Sales[Quantity])
-```
-
-### Average Order Value
-
-```DAX
-Average Order Value =
-DIVIDE(
-    [Total Revenue],
-    [Total Orders],
-    0
-)
-```
-
-### Repeat Customers
-
-```DAX
-Repeat Customers =
-COUNTROWS(
-    FILTER(
-        VALUES(Sales[Customer ID]),
-        CALCULATE(
-            DISTINCTCOUNT(Sales[Order ID])
-        ) > 1
-    )
-)
-```
-
-### One-Time Customers
-
-```DAX
-One-Time Customers =
-COUNTROWS(
-    FILTER(
-        VALUES(Sales[Customer ID]),
-        CALCULATE(
-            DISTINCTCOUNT(Sales[Order ID])
-        ) = 1
-    )
-)
-```
-
----
-
-# 💡 Key Business Questions Answered
-
-This project helps answer important business questions such as:
-
-1. What is the total revenue generated?
-2. How many orders were placed?
-3. How many unique customers made purchases?
-4. Which category generates the highest revenue?
-5. Which products generate the most revenue?
-6. Which month generated the highest revenue?
-7. What is the monthly revenue trend?
-8. Which payment method generates the highest revenue?
-9. How many customers are repeat customers?
-10. How many customers are one-time customers?
-11. Which customers generate the highest revenue?
-12. How do discounts impact revenue?
-13. Which order statuses generate the most revenue?
-14. What is the Average Order Value?
-15. What is the Month-over-Month revenue growth?
+* How much revenue is generated?
+* How many orders were placed?
+* Which categories perform best?
+* Which products generate the highest revenue?
+* Who are the top customers?
+* How many customers are repeat customers?
+* Which payment methods generate the most revenue?
+* How do discounts impact revenue?
+* How does revenue change over time?
 
 ---
 
 # 📁 Project Structure
 
 ```text
-Pakistan-Ecommerce-Sales-Analytics/
+Pakistan-Ecommerce-Power-BI-Dashboard/
 │
 ├── Data/
 │   └── pakistan_ecommerce_sales.csv
 │
-├── SQL/
-│   └── Pakistan_Ecommerce_SQL_Analysis.sql
-│
 ├── Power BI/
-│   └── Pakistan_Ecommerce_Sales_Analytics.pbix
+│   └── Pakistan_Ecommerce_PowerBI_Dashboard.pbix
 │
 ├── Dashboard/
 │   ├── Executive_Overview.png
@@ -478,84 +240,20 @@ Pakistan-Ecommerce-Sales-Analytics/
 
 ---
 
-# 📸 Dashboard Preview
-
-## Executive Overview
-
-Add screenshot here:
-
-```text
-Dashboard/Executive_Overview.png
-```
-
----
-
-## Product & Category Analysis
-
-Add screenshot here:
-
-```text
-Dashboard/Product_Category_Analysis.png
-```
-
----
-
-## Customer & Business Analysis
-
-Add screenshot here:
-
-```text
-Dashboard/Customer_Business_Analysis.png
-```
-
----
-
 # 📚 Skills Demonstrated
 
-### SQL
-
-* Data Exploration
 * Data Cleaning
-* Data Validation
-* Aggregations
-* GROUP BY
-* HAVING
-* Subqueries
-* CTEs
-* Window Functions
-* LAG()
-* RANK()
-* DENSE_RANK()
-* CASE Statements
-
-### Power BI
-
-* MySQL Connection
 * Power Query
-* Data Transformation
 * Data Modeling
 * Relationships
 * Date Tables
 * DAX
-* KPI Cards
-* Interactive Dashboards
-* Slicers
-* Business Insights
-
----
-
-# 🚀 Project Outcome
-
-This project demonstrates the complete end-to-end data analytics workflow from SQL data analysis to interactive business intelligence reporting.
-
-The project combines advanced SQL techniques with Power BI data modeling and DAX calculations to transform raw e-commerce transaction data into meaningful insights and interactive dashboards.
-
----
+* KPI Development
+* Data Visualization
+* Dashboard Design
+* Business Intelligence
 
 # 👨‍💻 Author
-
 **Malik Muhammad Ali Aslam**
-
-Aspiring Data Analyst | SQL | Power BI | Python | Excel
-GitHub: malikALIaslam
-LinkedIn: Muhammad Ali
+Aspiring Data Analyst
+Skills: SQL | Power BI | Python | Excel
